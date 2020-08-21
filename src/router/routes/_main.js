@@ -10,7 +10,12 @@ const routes = [
     page: 'index',
   },
   {
-    pattern: `/article/:id(${patterns.id})`,
+    pattern: '/:channel/:category',
+    name: 'channel',
+    page: 'channel',
+  },
+  {
+    pattern: `/article/:id`,
     name: 'article-detail',
     page: 'article-detail',
   },
