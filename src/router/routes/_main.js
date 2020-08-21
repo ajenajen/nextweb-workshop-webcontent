@@ -10,30 +10,40 @@ const routes = [
     page: 'index',
   },
   {
-    pattern: '/:channel/:category',
+    pattern: '/:channelName',
     name: 'channel',
     page: 'channel',
   },
   {
-    pattern: `/article/:id`,
-    name: 'article-detail',
-    page: 'article-detail',
+    pattern: '/:channelName/:category',
+    name: 'category',
+    page: 'channel',
   },
   {
-    pattern: '/about',
-    name: 'about',
-    page: 'about',
+    pattern: '/:channelName/:category/:id',
+    name: 'content-detail',
+    page: 'content-detail',
   },
-  {
-    pattern: '/login',
-    name: 'login',
-    page: 'login',
-  },
-  {
-    pattern: '/account',
-    name: 'account',
-    page: 'account',
-  },
+  // {
+  //   pattern: `/article/:id`,
+  //   name: 'article-detail',
+  //   page: 'article-detail',
+  // },
+  // {
+  //   pattern: '/about',
+  //   name: 'about',
+  //   page: 'about',
+  // },
+  // {
+  //   pattern: '/login',
+  //   name: 'login',
+  //   page: 'login',
+  // },
+  // {
+  //   pattern: '/account',
+  //   name: 'account',
+  //   page: 'account',
+  // },
 ]
 
 module.exports = routes

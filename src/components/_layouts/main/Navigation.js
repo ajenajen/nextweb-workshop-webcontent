@@ -8,10 +8,10 @@ const mainMenus = [
     name: 'Home',
     route: 'home',
   },
-  {
-    name: 'About',
-    route: 'about',
-  },
+  // {
+  //   name: 'About',
+  //   route: 'about',
+  // },
 ]
 
 const LinkItem = forwardRef((props, ref) => (
@@ -41,7 +41,7 @@ export default function Navigation() {
         </Link>
       ))}
 
-      {isAuthenticated ? (
+      {/* {isAuthenticated ? (
         <Link key="Account" route="account" passHref>
           <LinkItem menu={{ name: 'Account' }} />
         </Link>
@@ -49,7 +49,7 @@ export default function Navigation() {
         <Link key="Login" route="login" passHref>
           <LinkItem menu={{ name: 'Login' }} />
         </Link>
-      )}
+      )} */}
     </nav>
   )
 }

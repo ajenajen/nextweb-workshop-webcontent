@@ -1,2 +1,2 @@
-import Channel from '@components/channel'
-export default Channel
+import ChannelPage from '@components/channel'
+export default ChannelPage
